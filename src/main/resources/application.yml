@@ -1,0 +1,12 @@
+spring:
+  rabbitmq:
+    host: 0.0.0.0
+    port: 5672
+    username: root
+    password: 123456
+    # 开启消息的手动应答
+    listener:
+      direct:
+        acknowledge-mode: MANUAL
+      simple:
+        acknowledge-mode: MANUAL
